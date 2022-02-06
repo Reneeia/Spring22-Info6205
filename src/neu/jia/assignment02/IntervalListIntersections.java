@@ -14,7 +14,7 @@ public class IntervalListIntersections {
         int i = 0;
         int j = 0;
 
-        //create a arraylist to store the result first
+        //create an arraylist to store the result first
         ArrayList<int[]> res = new ArrayList<>();
 
         while (i < firstList.length && j < secondList.length) {
@@ -31,7 +31,7 @@ public class IntervalListIntersections {
             }
         }
 
-        //change arraylist to 2D array
+        //copy arraylist in to 2D array
         int[][] result = new int[res.size()][2];
         for (i = 0; i < res.size(); i++) {
             result[i] = res.get(i);

@@ -3,6 +3,7 @@ package neu.jia.assignment02;
 public class FindMinimumInRotatedSortedArray {
 
     public int findMin(int[] nums) {
+        //edge cases check
         if(nums == null || nums.length == 0){
             return -1;
         }
@@ -11,6 +12,7 @@ public class FindMinimumInRotatedSortedArray {
             return nums[0];
         }
 
+        //do binary search
         int left = 0;
         int right = nums.length -1;
 
@@ -31,6 +33,7 @@ public class FindMinimumInRotatedSortedArray {
                 right = mid -1;
             }
         }
+        //return the min value
         return Math.min(nums[left], nums[right]);
     }
 }
