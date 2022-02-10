@@ -33,6 +33,7 @@ public class ReorderList {
 
     }
 
+    //method to reverse the linked ist
     private ListNode reverseLinkedList(ListNode head) {
         ListNode prev = null;
         ListNode cur = head;
@@ -47,6 +48,7 @@ public class ReorderList {
         return prev;
     }
 
+    //method to merge two linked lists
     private ListNode merge(ListNode firstHalf, ListNode secondHalf) {
         ListNode dummy = new ListNode(0);
         ListNode cur = dummy;
