@@ -30,7 +30,7 @@ public class MissingRange {
             value = nums[i] + 1;
         }
 
-        // postprocessing the result to display "->"
+        // postprocessing the result to display
         if (value <= upper) {
             // finds gap
             StringBuilder sb = new StringBuilder();
