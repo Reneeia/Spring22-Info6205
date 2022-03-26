@@ -7,7 +7,7 @@ import java.util.LinkedList;
 public class deleteOverlapIntervals {
 
     //comparator
-    private class CustomComparator implements Comparator<int[]> {
+    private static class CustomComparator implements Comparator<int[]> {
         @Override
         public int compare(int[] a, int[] b) {
             return a[0] - b[0];
@@ -16,7 +16,7 @@ public class deleteOverlapIntervals {
 
     public int deleteOverlapIntervals(int[][] intervals) {
         LinkedList<int[]> result = new LinkedList<>();
-        
+
         if (intervals == null || intervals.length == 0) {
             return -1;
         }

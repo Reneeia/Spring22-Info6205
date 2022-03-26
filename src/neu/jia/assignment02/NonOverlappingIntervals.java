@@ -7,7 +7,7 @@ import java.util.LinkedList;
 public class NonOverlappingIntervals {
 
     //override comparator to help sort the intervals by the start time
-    private static class CustomComparator implements Comparator<int[]> {
+    public static class CustomComparator implements Comparator<int[]> {
         @Override
         public int compare(int[] a, int[] b) {
             return a[0] - b[0];
